@@ -1,0 +1,105 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background-color 2s, color 2s;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    transition: background-color 2s ease-in-out, color 2s ease-in-out;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#kdaui {
+    border: 3px solid #fff;
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto 600px auto;
+}
+
+#kdaui ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#kdaui li {
+    margin: 5px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#mono {
+    background-color: #55CDFC;
+    color: #fff;
+    transition: background-color 2s ease-in-out, color 2s ease-in-out;
+}
+
+body.transition-to-mono {
+    background-color: #FFF;
+    color: #000;
+}
+
+body.transition-to-mono #mono {
+    background-color: #F7A8B8;
+    color: #000;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #55CDFC;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    #kdaui {
+        max-width: 100%;
+    }
+}

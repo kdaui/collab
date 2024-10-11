@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chlaui</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chlaui - The Collab</h1>
+        <p>A project born from fun.</p>
+    </header>
+
+    <main>
+        <section id="homepage">
+            <h2>Yo</h2>
+            <p>This project is projecting.</p>
+        </section>
+        <section id="kdaui">
+            <h2>Kdaui</h2>
+            <p>Yo, I'm that @kdaui guy.</p>
+            <p>Big fan of the <a href="https://nekoweb.org">Nekoweb</a> world.</p>
+            <p>Big fan of web-dev, manga, scrolling through media that is social.</p>
+			<p>My original website was created on the 8/4/24</p>
+			<p>I breathe in places where I breathe in.</p>
+        </section>
+        <section id="mono">
+            <h2>About Mono</h2>
+            <p>Yo, I'm that @monochromehd girl.</p>
+            <p>I'm transgender.</p>
+            <p>I live in England (not London).</p>
+        </section>
+        <section id="collab">
+            <h2>Our Collaboration</h2>
+            <p>Check out our joint projects and fun facts about us working together.</p>
+            <ul>
+                <li>Project 1: Project description here...</li>
+                <li>Project 2: Another project description...</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Reach out to <strong>Kdaui</strong>: <a href="#">Contact Link</a></p>
+            <p>Reach out to <strong>Mono</strong>: <a href="#">Contact Link</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Breathers & The Drowners Collab</p>
+    </footer>
+<script>
+    window.addEventListener('scroll', function() {
+        const monoSection = document.getElementById('mono');
+        const body = document.body;
+        const monoPosition = monoSection.getBoundingClientRect();
+        if (monoPosition.top <= window.innerHeight / 0.8) {
+            body.classList.add('transition-to-mono');
+        } else {
+            body.classList.remove('transition-to-mono');
+        }
+    });
+</script>
+</body>
+</html>
