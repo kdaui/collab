@@ -15,7 +15,9 @@ h1 {
     font-size: 2.5em;
     animation: flicker 2s infinite alternate;
 }
-
+.link {
+	color: pink;
+}
 @keyframes flicker {
     0%, 100% {
         opacity: 1;
@@ -35,7 +37,13 @@ h2 {
     font-size: 2em;
 }
 
+.pfp {
+	width: 200px;
+	margin-right: 10px;
+}
+
 #kdaui {
+	display: flex;
     border: 3px solid #fff;
     padding: 20px;
     text-align: left;
@@ -53,22 +61,48 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
 }
 
+#pfp1 {
+	flex: 1;
+}
+
+#desc1 {
+	flex: 2;
+}
+
 #mono {
-    background-color: #55CDFC;
+	display: flex;
+	align-content: center;
+	justify-content: flex-start;
+    background-color: skyblue;
     color: #fff;
     transition: background-color 2s ease-in-out, color 2s ease-in-out;
 }
 
+#pfp2 {
+	flex: 1;
+}
+
+#desc2 {
+	flex: 2;
+}
+
+#mono1 {
+	flex: 2;
+}
+
 body.transition-to-mono {
-    background-color: #FFF;
+    background-color: white;
     color: #000;
 }
 
 body.transition-to-mono #mono {
-    background-color: #F7A8B8;
+    background-color: lavender;
     color: #000;
 }
-
+#contact {
+	background-color: #333;
+    color: #fff;
+}
 a {
     color: #fff;
     text-decoration: none;
